@@ -7,6 +7,11 @@
 
         <nav class="nav">
             <ul class="nav-list">
+                {{ with .Site.Params.Mastodon }}
+                <li class="nav-item">
+                    <a rel="me" href="https://{{ .instance }}/@{{ .name }}">Mastodon</a>
+                </li>
+                {{ end }}
                 {{ with .Site.Params.twitterName }}
                 <li class="nav-item">
                     <a class="pure-button" href="https://twitter.com/{{ . }}"><i class="fa fa-twitter"></i> Twitter</a>
