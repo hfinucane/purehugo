@@ -9,21 +9,21 @@
             <ul class="nav-list">
                 {{ with .Site.Params.Mastodon }}
                 <li class="nav-item">
-                    <a rel="me" href="https://{{ .instance }}/@{{ .name }}">Mastodon</a>
+                    <a class="pure-button" rel="me" href="https://{{ .instance }}/@{{ .name }}"><i class="fab fa-mastodon"></i> Mastodon</a>
                 </li>
                 {{ end }}
                 {{ with .Site.Params.twitterName }}
                 <li class="nav-item">
-                    <a class="pure-button" href="https://twitter.com/{{ . }}"><i class="fa fa-twitter"></i> Twitter</a>
+                    <a class="pure-button" href="https://twitter.com/{{ . }}"><i class="fab fa-twitter"></i> Twitter</a>
                 </li>
                 {{ end }}
                 {{ with .Site.Params.githubName }}
                 <li class="nav-item">
-                    <a class="pure-button" href="https://github.com/{{ . }} "><i class="fa fa-github-alt"></i> github</a>
+                    <a class="pure-button" href="https://github.com/{{ . }} "><i class="fab fa-github-alt"></i> github</a>
                 </li>
                 {{ end }}
                 <li class="nav-item">
-                    <a class="pure-button" href="{{ .Site.BaseURL }}/index.xml"><i class="fa fa-rss"></i> rss</a>
+                    <a class="pure-button" href="{{ .Site.BaseURL }}/index.xml"><i class="fas fa-rss"></i> rss</a>
                 </li>
             </ul>
         </nav>
